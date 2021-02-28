@@ -11,7 +11,10 @@ const handler = async function (event) {
 
   // TODO: customize your URL and API keys set in the Netlify Dashboard
   // this is secret too, your frontend won't see this
-  const { API_SECRET } = process.env
+  const { API_SECRET, STRIPE_PUBLISHABLE_KEY, STRIPE_SECRET_KEY } = process.env;
+  console.log(STRIPE_PUBLISHABLE_KEY);
+  console.log(STRIPE_SECRET_KEY);
+  
   const URL = `https://dog.ceo/api/breed/${API_SECRET}/images`
 
   console.log('Constructed URL is ...', URL)
