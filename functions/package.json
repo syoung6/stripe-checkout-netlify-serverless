@@ -5,6 +5,9 @@
   "author": "Jason Lengstorf <jason@lengstorf.com> (https://lengstorf.com)",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
+    "process": "^0.11.10",
+    "qs": "^6.9.6",
     "stripe": "^8.39.2"
   }
 }
