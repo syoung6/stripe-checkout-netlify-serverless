@@ -1,13 +1,7 @@
-const publishKey = 'pk_test_51INt1LKVtADShm00p9Kq8apFcYNM1eeUicdjYHbcTEOu2KYkliS8NFlMMVXqpzm2hSYWix21pvGCMfXXMVhIoY9p00BF0pzK1p';
-const secretKey = 'sk_test_51INt1LKVtADShm00ytNgXXuZqa9oeyxH8FJiuo64jMubBuRz2oaPywM2gGE1tR68hRBcfuZINEBEuVbyd1IVThOv00PEwdehkN';
-
 const process = require('process');
 const { STRIPE_PUBLISHABLE_KEY, STRIPE_SECRET_KEY } = process.env;
-console.log(STRIPE_PUBLISHABLE_KEY);
-console.log(STRIPE_SECRET_KEY);
 
 const stripe = require('stripe')(STRIPE_SECRET_KEY);
-// const stripe = require('stripe')(secretKey);
 const inventory = require('./data/products.json');
 
 exports.handler = async (event) => {
