@@ -58,3 +58,7 @@ main {
   line-height: 1.25rem;
   padding: 0.25rem;
 }
+
+.product button:hover {
+  cursor: pointer;
+}
